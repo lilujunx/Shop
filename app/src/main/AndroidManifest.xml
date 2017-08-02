@@ -19,6 +19,7 @@
     <!-- 蓝牙分享所需的权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--Some one sas dawdxxxxxxxxxxxxxxxxx-->
     <application
         android:name=".base.SCBaseApp"
         android:allowBackup="true"
