@@ -19,4 +19,7 @@ public class DBConfig {
 
         return mDaoConfig;
     }
+
+
+    public static int max=100;
 }
