@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.admin.exe.shop.ui.fragment.HomeFragment">
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_list_frag_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:swipe_style="classic">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_twitter_header"/>
+
+
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+
+
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/rl_title"
+        android:background="@color/app_style"
+        >
+
+        <ImageView
+            android:id="@id/title_left"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/common_title_bar_back_white_normal"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="xxxx"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

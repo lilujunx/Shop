@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_phone_commonloginActivity"
+            style="@style/edit_phone"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_pwd_commonloginActivity"
+                android:hint="@string/input_pwd"
+                style="@style/edit_pwd"
+                 />
+
+            <CheckBox
+                android:id="@+id/imgv_isvisibel_commonloinActivity"
+                style="@style/cb_showpwd"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_forgetpwd_commonloginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="忘记密码？"
+            android:textColor="@color/app_style"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/bt_login_commonloginActivity"
+            style="@style/bt_doNet"
+            android:text="@string/login"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

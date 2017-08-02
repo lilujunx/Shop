@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_phone_regActivity"
+            style="@style/edit_phone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/edit_pwd_regActivity"
+                style="@style/edit_pwd"
+                android:hint="@string/input_pwd_reg"/>
+
+            <CheckBox
+                android:id="@+id/imgv_isvisibel_regActivity"
+                style="@style/cb_showpwd"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/edit_code_regActivity"
+                style="@style/edit_code"/>
+
+            <Button
+                android:id="@+id/bt_getcode__regActivity"
+                style="@style/bt_getCode"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_reg_regActivity"
+            style="@style/bt_doNet"
+            android:text="注册"/>
+    </LinearLayout>
+</RelativeLayout>

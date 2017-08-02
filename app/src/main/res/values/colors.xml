@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8200</color>
+    <color name="colorPrimaryDark">#FF8200</color>
+    <color name="colorAccent">#FF8200</color>
+
+    <color name="app_style">#FF8200</color>
+    <color name="tv_gray">#7f7f7f</color>     <!--字体灰-->
+    <color name="tv_black">#565656</color>     <!--字体黑-->
+    <color name="red">#ff7f7f</color>        <!--红色-->
+    <color name="gray_line">#e9ebf0</color>      <!--灰线-->
+    <color name="yellow">#ffc561</color>            <!-- 黄色-->
+    <color name="white">#fff</color>
+    <color name="blue">#0096ff</color>           <!--蓝色-->
+    <color name="green">#90ce50</color>               <!--绿色-->
+    <color name="transparent">#0000</color>
+</resources>

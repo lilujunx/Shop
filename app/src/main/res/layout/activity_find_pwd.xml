@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+     >
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_phone_findpwdActivity"
+            style="@style/edit_phone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_code_findpwdActivity"
+                style="@style/edit_code"
+                />
+
+            <Button
+                android:id="@+id/bt_getcode_findpwdActivity"
+                style="@style/bt_getCode"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_pwd_findpwdActivity"
+                android:hint="@string/input_pwd_reg"
+                style="@style/edit_pwd"
+                />
+
+            <CheckBox
+                android:button="@null"
+                android:id="@+id/cb_isvisibel_commonloinActivity"
+                style="@style/cb_showpwd"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_login_findpwdActivity"
+            style="@style/bt_doNet"
+            android:text="修改密码"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

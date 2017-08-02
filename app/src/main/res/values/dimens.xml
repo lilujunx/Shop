@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">60dp</dimen>
+    <dimen name="gv_spac_hor">15dp</dimen>
+    <dimen name="load_more_footer_height_classic">70dp</dimen>
+    <dimen name="refresh_header_height_twitter">70dp</dimen>
+    <dimen name="rb_vp_magin">3dp</dimen>
+</resources>

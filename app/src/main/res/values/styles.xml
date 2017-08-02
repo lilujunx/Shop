@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="pop_more">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit</item>
+    </style>
+
+    <!--请求网络访问的Bt-->
+    <style name="bt_doNet">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/shape_bg_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!--输入密码的edit-->
+    <style name="edit_pwd">
+        <item name="android:textCursorDrawable">@color/app_style</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">18</item>
+
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:theme">@style/edit_input</item>
+    </style>
+    <!--显示/隐藏密码-->
+    <style name="cb_showpwd">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/showpwd_selector</item>
+    </style>
+    <!--登陆用Edit风格-->
+    <style name="edit_input" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/app_style</item>
+        <item name="colorControlActivated">@color/app_style</item>
+
+    </style>
+    <!--输入手机号Edit-->
+    <style name="edit_phone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:hint">@string/input_phone</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textCursorDrawable">@color/app_style</item>
+        <item name="android:theme">@style/edit_input</item>
+    </style>
+    <!--输入验证码edit-->
+    <style name="edit_code">
+        <item name="android:textCursorDrawable">@color/app_style</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:hint">@string/input_code</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:theme">@style/edit_input</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <!--get验证码的bt-->
+    <style name="bt_getCode">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_bg_button</item>
+        <item name="android:text">@string/get_code</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+</resources>

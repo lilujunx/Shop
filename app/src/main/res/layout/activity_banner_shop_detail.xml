@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_banner_shop_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.admin.exe.shop.ui.activity.BannerShopDetailActivity">
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_list_frag_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:background="#fff"
+        app:swipe_style="classic">
+
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_classic_footer"/>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/app_style"
+        >
+
+        <ImageView
+            android:id="@id/title_left"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/common_title_bar_back_white_normal"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="xxxx"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_collent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#4fFF8200"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/collent_selector"
+                android:button="@null"
+                android:enabled="false"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addshopcar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7fFF8200"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_style"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shop_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.admin.exe.shop.ui.activity.ShopListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/rb_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单价"
+            android:textColor="@color/tv_black"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/rb_evalute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="好评"
+            android:textColor="@color/tv_black"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/rb_sale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="销量"
+            android:textColor="@color/tv_black"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/rb_stype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@color/tv_black"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_list_frag_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:background="#fff"
+        app:swipe_style="classic">
+
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_classic_footer"/>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+</LinearLayout>
